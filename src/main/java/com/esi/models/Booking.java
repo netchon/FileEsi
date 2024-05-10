@@ -14,6 +14,25 @@ public class Booking {
         this.dataSaida = dataSaida;
     }
 
+    public Booking() {
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public String getNumeroQuarto() {
+        return numeroQuarto;
+    }
+
+    public String getDataEntrada() {
+        return dataEntrada;
+    }
+
+    public String getDataSaida() {
+        return dataSaida;
+    }
+
     @Override
     public String toString() {
         return String.format("%s,%s,%s,%s", nomeCliente, numeroQuarto, dataEntrada, dataSaida);
