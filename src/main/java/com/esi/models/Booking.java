@@ -7,6 +7,7 @@ public class Booking {
     private String dataEntrada;
     private String dataSaida;
 
+
     public Booking(String nomeCliente, String numeroQuarto, String dataEntrada, String dataSaida) {
         this.nomeCliente = nomeCliente;
         this.numeroQuarto = numeroQuarto;

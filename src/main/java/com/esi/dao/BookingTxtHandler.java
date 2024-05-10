@@ -18,7 +18,7 @@ public class BookingTxtHandler implements BookingHandler{
         this.caminhoFicheiro = Paths.get(nomeFicheiro);
     }
     @Override
-    public void ecreverNoFicheiro(List<Booking> bookings) throws IOException {
+    public void saveBooking(List<Booking> bookings) throws IOException {
         List<String> linhas = new ArrayList<>();
         for(Booking  booking : bookings){
             linhas.add(booking.toString());
@@ -28,7 +28,7 @@ public class BookingTxtHandler implements BookingHandler{
     }
 
     @Override
-    public List<Booking> lerDoFicheiro() throws IOException {
+    public List<Booking> readBooking() throws IOException {
         List<Booking> bookings = new ArrayList<>();
         List<String> linhas = null;
 

@@ -21,12 +21,12 @@ public class BookingJsonHandler implements  BookingHandler{
     }
 
     @Override
-    public void ecreverNoFicheiro(List<Booking> bookings) throws IOException {
+    public void saveBooking(List<Booking> bookings) throws IOException {
         objectMapper.writeValue(caminhoFicheiro.toFile(), bookings);
     }
 
     @Override
-    public List<Booking> lerDoFicheiro() throws IOException {
+    public List<Booking> readBooking() throws IOException {
 
         if(!Files.exists(caminhoFicheiro)){
             return List.of();
