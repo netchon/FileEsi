@@ -7,11 +7,31 @@ public class Booking {
     private String dataEntrada;
     private String dataSaida;
 
+
     public Booking(String nomeCliente, String numeroQuarto, String dataEntrada, String dataSaida) {
         this.nomeCliente = nomeCliente;
         this.numeroQuarto = numeroQuarto;
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
+    }
+
+    public Booking() {
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public String getNumeroQuarto() {
+        return numeroQuarto;
+    }
+
+    public String getDataEntrada() {
+        return dataEntrada;
+    }
+
+    public String getDataSaida() {
+        return dataSaida;
     }
 
     @Override
